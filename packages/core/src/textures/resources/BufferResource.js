@@ -46,7 +46,7 @@ export default class BufferResource extends Resource
     {
         const gl = renderer.gl;
 
-        if (this.compressedTextureFormats === null)
+        if (!this.compressedTextureFormats)
         {
             this.compressedTextureFormats = [];
 
